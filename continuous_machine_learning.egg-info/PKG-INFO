@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: continuous-machine-learning
+Version: 0.1.0
+Summary: SE 489 Week 9 starter - Continuous Machine Learning with CML.
+Requires-Python: <3.12,>=3.11
+Requires-Dist: scikit-learn<2,>=1.5
+Requires-Dist: matplotlib<4,>=3.8
+Requires-Dist: numpy<3,>=1.26

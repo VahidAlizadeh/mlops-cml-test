@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+continuous_machine_learning.egg-info/PKG-INFO
+continuous_machine_learning.egg-info/SOURCES.txt
+continuous_machine_learning.egg-info/dependency_links.txt
+continuous_machine_learning.egg-info/requires.txt
+continuous_machine_learning.egg-info/top_level.txt
+simple_mlops/__init__.py
+simple_mlops/train_model_cml.py
