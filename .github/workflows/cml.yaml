@@ -50,6 +50,8 @@ jobs:
       #    and runs on Node 20/24; v1 is deprecated.
       - name: Set up CML
         uses: iterative/setup-cml@v2
+        with:
+          vega: false
 
       # 5. Install the project's Python dependencies into the runner's
       #    system Python (no venv needed - the runner is throwaway).
