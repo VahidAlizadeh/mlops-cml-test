@@ -38,7 +38,7 @@ jobs:
       # 2. Install uv (Astral's fast Python package manager) so the install
       #    step is fast and cacheable.
       - name: Install uv
-        uses: astral-sh/setup-uv@v8
+        uses: astral-sh/setup-uv@v8.1.0
         with:
           enable-cache: true
 
