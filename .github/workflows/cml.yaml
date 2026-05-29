@@ -56,12 +56,16 @@ jobs:
       # 5. Install the project's Python dependencies into the runner's
       #    system Python (no venv needed - the runner is throwaway).
       - name: Install dependencies
-        run: uv pip install --system -e .
+        run: |
+          uv venv --python 3.11
+          uv pip install -e .
 
       # 6. Train the model. Produces classification_report.txt and
       #    confusion_matrix.png in the working directory.
       - name: Train model
-        run: python simple_mlops/train_model_cml.py
+        run: |
+          source .venv/bin/activate
+          python simple_mlops/train_model_cml.py
 
       # 7. Assemble a Markdown report and post it as a PR comment.
       #
